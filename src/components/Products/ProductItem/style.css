@@ -1,0 +1,347 @@
+.product-main {
+  position: relative;
+  max-width: 26.125rem;
+  width: 100%;
+  /* max-height: 41.652375rem;
+  height: 100%; */
+  overflow: hidden;
+}
+
+.action-btn {
+  position: absolute;
+  z-index: 9;
+  top: 1.25rem;
+  left: 1.25rem;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.product-main:hover .action-btn {
+  opacity: 1;
+}
+
+.heart {
+  margin-bottom: 0.62rem;
+}
+
+.heart svg,
+.cart-item svg {
+  color: black;
+  max-width: 1.25rem;
+  width: 100%;
+  max-height: 1.25rem;
+  height: 100%;
+  padding: 0.8rem;
+  background: white;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.heart svg:hover {
+  background-color: black;
+  color: white;
+}
+
+.cart-item svg:hover {
+  background-color: black;
+  color: white;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 26.125rem;
+  width: 100%;
+  max-height: 35.73rem;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.img img {
+  position: relative;
+  max-width: 26.125rem;
+  width: 100%;
+  height: auto;
+  transition: all 1s;
+}
+
+.img img:hover {
+  width: 105%;
+  height: auto;
+}
+
+.product-detail-img-hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 26.125rem;
+  width: 100%;
+  max-height: 22.73rem;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.product-detail-img-hover img {
+  position: relative;
+  max-width: 26.125rem;
+  width: 100%;
+  height: auto;
+  transition: all 1s;
+}
+
+.product-detail-img-hover img:hover {
+  width: 105%;
+  height: auto;
+}
+
+span {
+  z-index: 3;
+  background-color: black;
+  padding: 0.1rem 0.4rem;
+  color: white;
+  font-size: 0.9rem;
+  font-family: "Poppins";
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+}
+
+.slide-text {
+  margin-top: 1.25rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Poppins";
+  font-weight: 400;
+  margin-top: 0.3rem;
+  color: #666;
+}
+
+.cut-price {
+  text-decoration: line-through;
+  margin-right: 0.7rem;
+}
+
+.swiper-wrapper {
+  margin: 0% 0.5rem 1.875rem;
+}
+
+/* ------------------------ Product Detail ------------------------ */
+
+#product-detail {
+  position: fixed;
+  background: rgb(0, 0, 0, 0.5);
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 10;
+}
+
+.product-detail {
+  position: relative;
+  max-width: 65rem;
+  max-height: 31.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  overflow: hidden;
+}
+
+.product-detail-img {
+  max-width: 30rem;
+  width: 100%;
+  height: auto;
+  margin-right: 3.25rem;
+}
+
+.product-detail-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-detail-text {
+  width: 100%;
+  padding-right: 3.25rem;
+}
+
+.product-det-title h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.product-det-title {
+  margin-bottom: 1.25rem;
+}
+
+.stars {
+  margin-bottom: 1.25rem;
+}
+
+.stars svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0 0.3rem;
+}
+
+.sale {
+  display: flex;
+  align-items: center;
+  color: #b91400;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.sale img {
+  margin-right: 0.5rem;
+}
+
+.product-det-price {
+  display: flex;
+  margin-bottom: 1.25rem;
+  align-items: center;
+}
+
+.product-det-price h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.product-det-price .cut {
+  text-decoration: line-through;
+  color: #666;
+  margin-right: 1rem;
+}
+
+.product-det-price p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-left: 0.8rem;
+  border-left: 2px solid gainsboro;
+  color: #309013;
+  margin: 0%;
+}
+
+.quantity-text {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  position: initial;
+  margin-bottom: 0.5rem;
+  background: transparent;
+  color: black;
+  padding: 0%;
+}
+
+#quantity {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+#quantity-button {
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75rem 2.5rem;
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+#quantity-button:hover {
+  background: black;
+  color: white;
+}
+
+.quantity {
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+  padding: 0.3rem 1.25rem;
+  margin-right: 1.25rem;
+  background: #f3f2f2;
+  display: flex;
+  align-items: center;
+}
+
+.quantity button {
+  background: transparent;
+  border: transparent;
+  font-size: 1.67rem;
+  cursor: pointer;
+}
+
+.quantity span {
+  font-size: 1rem;
+  position: initial;
+  background: transparent;
+  color: black;
+  margin: 0 1rem;
+}
+
+.buy-btn {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75rem 2.5rem;
+  background: black;
+  border: 1px solid transparent;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+@media screen and (max-width: 850px) {
+  .img {
+    max-width: 9.81rem;
+  }
+
+  .product-main:hover .action-btn {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .product-main {
+    margin: 0 auto;
+  }
+
+  .img {
+    max-width: 100%;
+  }
+
+  .product-main:hover .action-btn {
+    opacity: 0;
+  }
+}

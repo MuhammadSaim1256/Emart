@@ -1,0 +1,40 @@
+.above-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 5px 15px;
+  background-color: #f0ece4;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.left-content2 {
+  flex: 1;
+  color: #2c2a2a;
+  font-size: 0.875rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+
+.right-content2 {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+
+.icon2 {
+  margin-right: 5px;
+  position: inherit;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #000;
+}
+
+.separator {
+  margin: 0 5px;
+}

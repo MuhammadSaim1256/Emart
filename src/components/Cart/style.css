@@ -1,0 +1,283 @@
+/* style.css */
+
+#cart {
+  background-color: transparent;
+  background-image: linear-gradient(
+    226.69deg,
+    #e5f8ff8c 38.63%,
+    #f9e0b014 82.88%
+  );
+  height: 86vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  overflow: auto;
+}
+
+.cart-table-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#h1 {
+  text-align: center;
+  margin: auto;
+  font-weight: 500;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cart-container {
+  background-color: #f9f9f9;
+  padding: 1.25rem;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 8%);
+  margin: 1.25rem 0;
+  margin-right: 1.25rem;
+  width: 71.3%;
+  overflow: hidden;
+  position: relative;
+  height: auto;
+}
+
+.cart-title {
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-item-cart {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.cart-item h3 {
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+}
+
+.cart-item-image img {
+  max-width: 6.25rem;
+  height: auto;
+  margin: 1.87rem;
+}
+
+.cart-item-image {
+  display: flex;
+  align-items: center;
+  max-width: 420px;
+  width: 100%;
+}
+
+.cart-item-details {
+  padding: 0.62rem;
+  padding-left: 4.25rem;
+}
+
+.cart-item-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cart-item-price {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  min-width: 11rem;
+}
+
+.cart-item-total {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  padding-left: 7.3rem;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  border: 1px solid #666;
+}
+
+.cart-item-quantity button {
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  margin: 0 0.25rem;
+  background-color: transparent;
+  font-size: 1.25rem;
+}
+
+.th-tr {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+.th-tr::before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: gainsboro;
+  bottom: 0%;
+}
+
+.remove {
+  width: 1.56rem;
+  height: auto;
+  /* padding: 0.25rem 0.5rem; */
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.product-remove {
+  padding-right: 0.75rem;
+  padding-bottom: 0.56rem;
+  min-width: 1.87rem;
+}
+
+.product-thumbnail {
+  min-width: 32px;
+  padding-right: 0.75rem;
+  padding-bottom: 0.56rem;
+  min-width: 8.12rem;
+}
+
+.product-name {
+  padding-right: 0.75rem;
+  padding-bottom: 0.56rem;
+  min-width: 18.12rem;
+  font-weight: 400;
+}
+
+.product-price {
+  padding-right: 0.75rem;
+  padding-bottom: 0.56rem;
+  min-width: 15.67rem;
+  font-weight: 400;
+}
+
+.product-quantity {
+  padding-right: 8.75rem;
+  padding-bottom: 0.56rem;
+  font-weight: 400;
+}
+
+.product-total {
+  padding-right: 0.75rem;
+  padding-bottom: 0.56rem;
+  font-weight: 400;
+  min-width: 10rem;
+}
+
+#h1 {
+  text-align: center;
+  padding: 20px;
+  animation: pulse 2s infinite;
+}
+
+.cart-subtotal {
+  flex: 1;
+  background: white;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 8%);
+  padding: 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.cart_totals h3 {
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.cart {
+  width: 100%;
+  border-top: 1px solid gainsboro;
+  padding: 1rem 0 0;
+}
+
+.cart-total {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gainsboro;
+}
+
+.cart-total th,
+.cart-total td th {
+  font-weight: 400;
+}
+
+.cart-shipping {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid gainsboro;
+}
+
+.cart-shipping td th {
+  width: auto;
+  font-weight: 400;
+}
+
+.cart-shipping th {
+  width: 83px;
+  text-align: left;
+  line-height: 1.67rem;
+  font-weight: 400;
+}
+
+.cart-tr-total {
+  border: none;
+  padding-bottom: 0;
+}
+
+.btn {
+  font-size: 1rem;
+  width: 100%;
+  padding: 12px 40px;
+  border: transparent;
+  border-radius: 0%;
+  margin-top: 1rem;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.8s ease;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,106 @@
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  background-color: #f0ece4;
+}
+
+.banner {
+  max-width: 93.75rem;
+  width: 100%;
+  display: flex;
+  margin: 0% auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-text {
+  max-width: 520px;
+}
+
+.banner-text h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 5.625rem;
+  letter-spacing: -0.029rem;
+  color: #000a12;
+  margin-bottom: 1.7rem;
+}
+
+.banner-text p {
+  font-family: "Jost";
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+
+.banner img {
+  max-width: 50rem;
+  width: 100%;
+  transition: all 0.35s cubic-bezier(0.38, 3, 0.57, 1.6);
+}
+
+.shop-now {
+  width: 10.1rem;
+  display: block;
+  background-color: #fff;
+  color: #000a12;
+  border: none;
+  margin: 20px 0px;
+  padding: 12px 40px;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.shop-now:hover {
+  background-color: #666;
+  color: white;
+  transform: translateY(-10px);
+}
+
+.banner img:hover {
+  transform: translateX(-10px);
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    margin-top: 6.25rem;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .banner h1 {
+    margin-bottom: 1.25rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .banner p {
+    margin-bottom: 1.25rem;
+  }
+
+  .shop-now {
+    width: 11rem;
+    display: block;
+    margin: 0 auto 1.25rem;
+    margin-bottom: 3.25rem;
+  }
+
+  .banner img {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+}
